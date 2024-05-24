@@ -1,0 +1,73 @@
+/*João Pedro Mendes Nowicki - Matricula: 202308232746.*/
+/*Rafael Kahl Konorath - Matricula: 202308232711.*/
+.textoPrecos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    margin: 16px auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 5px;
+    padding: 30px;
+    max-width: 1400px;
+}
+
+.grid-item,
+.grid-item1,
+.grid-item2 {
+    background-color: #050a1d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .textoPrecos {
+        font-size: 4vw;
+        margin-top: 50px;
+        padding: 0 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+        padding: 20px;
+    }
+
+    .grid-item,
+    .grid-item1,
+    .grid-item2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .textoPrecos {
+        font-size: 5vw;
+        margin-top: 30px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+        padding: 15px;
+    }
+
+    .grid-item,
+    .grid-item1,
+    .grid-item2 {
+        font-size: 16px;
+    }
+}

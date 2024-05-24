@@ -1,0 +1,77 @@
+/*João Pedro Mendes Nowicki - Matricula: 202308232746.*/
+/*Rafael Kahl Konorath - Matricula: 202308232711.*/
+:root {
+    --branco-principal: #ffffff;
+    --fonte-principal: 'Arial';
+    --cor-de-fundo: rgb(70, 16, 121);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+}
+
+.lista__item {
+    font-size: 19px;
+    margin-top: 8px;
+}
+
+.rodape {
+    background-color: #050a1d;
+    color: white;
+    padding: 6px;
+    text-align: center;
+}
+
+.rodape__logo {
+    max-width: 200px;
+    margin-bottom: 4px;
+}
+
+.rodape__lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.lista__link a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.lista__link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .lista__item {
+        font-size: 16px;
+    }
+
+    .rodape {
+        padding: 8px;
+    }
+
+    .rodape__logo {
+        max-width: 80px;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .lista__link a {
+        font-size: 12px;
+    }
+}

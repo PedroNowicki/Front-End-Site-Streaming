@@ -1,0 +1,115 @@
+/*João Pedro Mendes Nowicki - Matricula: 202308232746.*/
+/*Rafael Kahl Konorath - Matricula: 202308232711.*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #050a1d;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+.logo img {
+    height: 100px;
+}
+.search-box {
+    flex-grow: 1;
+    margin: 0 20px;
+    max-width: 600px;
+    width: 100%;
+}
+.search-box input {
+    width: 100%;
+    padding: 8px;
+    color: #ffffff;
+    background-color: var(--cor-de-fundo);
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .logo, .search-box, .login-button {
+        margin-bottom: 10px;
+    }
+
+    .search-box {
+        order: 1;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+    .login-button {
+        order: 2;
+    }
+}
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navigation li {
+    display: inline;
+    margin-right: 20px;
+}
+.navigation a {
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+.login-button button {
+    padding: 10px 18px;
+    border: none;
+    background-color: rgb(70, 16, 121);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.login-button button:hover {
+    background-color: rgb(0, 0, 0);
+}
+#login-dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #050a1d;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#login-dropdown form {
+    display: flex;
+    flex-direction: column;
+}
+#login-dropdown label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+#login-dropdown input {
+    margin-bottom: 16px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgb(70, 16, 121);
+    color: #fff;
+}
+#login-dropdown button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(70, 16, 121);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#login-dropdown button:hover {
+    background-color: #000000;
+}

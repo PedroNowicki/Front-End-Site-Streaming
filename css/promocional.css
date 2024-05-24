@@ -1,0 +1,156 @@
+/*João Pedro Mendes Nowicki - Matricula: 202308232746.*/
+/*Rafael Kahl Konorath - Matricula: 202308232711.*/
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+.content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.foreground-image,
+.foreground-image1 {
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.foreground-text {
+    margin-top: 20px;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.conteudoPromo,
+.conteudoPromo1,
+.conteudoPromo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.imagemPromo,
+.imagemPromo1,
+.imagemPromo2 {
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.textoPromo,
+.textoPromo1,
+.textoPromo2 {
+    max-width: 50%;
+}
+
+.textoPromo h1,
+.textoPromo1 h1,
+.textoPromo2 h1 {
+    margin: 0 0 40px;
+    font-size: 34px;
+}
+
+.textoPromo p,
+.textoPromo1 p,
+.textoPromo2 p {
+    margin: 0;
+    font-size: 26px;
+}
+
+@media (max-width: 768px) {
+    .foreground-text {
+        font-size: 1.5em;
+    }
+
+    .conteudoPromo,
+    .conteudoPromo1,
+    .conteudoPromo2 {
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+
+    .imagemPromo,
+    .imagemPromo1,
+    .imagemPromo2 {
+        max-width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .textoPromo,
+    .textoPromo1,
+    .textoPromo2 {
+        max-width: 100%;
+    }
+
+    .textoPromo h1,
+    .textoPromo1 h1,
+    .textoPromo2 h1 {
+        font-size: 28px;
+        margin: 0 0 20px;
+    }
+
+    .textoPromo p,
+    .textoPromo1 p,
+    .textoPromo2 p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .foreground-text {
+        font-size: 1.2em;
+    }
+
+    .conteudoPromo,
+    .conteudoPromo1,
+    .conteudoPromo2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .imagemPromo,
+    .imagemPromo1,
+    .imagemPromo2 {
+        max-width: 100%;
+        margin: 0 auto 10px;
+    }
+
+    .textoPromo h1,
+    .textoPromo1 h1,
+    .textoPromo2 h1 {
+        font-size: 24px;
+        margin: 0 0 10px;
+    }
+
+    .textoPromo p,
+    .textoPromo1 p,
+    .textoPromo2 p {
+        font-size: 18px;
+    }
+}

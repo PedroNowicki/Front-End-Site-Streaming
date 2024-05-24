@@ -1,0 +1,97 @@
+/*João Pedro Mendes Nowicki - Matricula: 202308232746.*/
+/*Rafael Kahl Konorath - Matricula: 202308232711.*/
+.formulario {
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 1px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.textoForm {
+    margin: 0 0 40px;
+    font-size: 34px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #050a1d;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #050a1d;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #000000;
+}
+
+@media (max-width: 768px) {
+    .formulario {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .textoForm {
+        font-size: 28px;
+        margin: 0 0 30px;
+    }
+
+    .form-group input {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .submit-button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario {
+        margin: 10px 5px;
+        padding: 10px;
+    }
+
+    .textoForm {
+        font-size: 24px;
+        margin: 0 0 20px;
+    }
+
+    .form-group input {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .submit-button {
+        padding: 6px;
+        font-size: 12px;
+    }
+}

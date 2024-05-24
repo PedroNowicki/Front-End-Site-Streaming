@@ -1,0 +1,146 @@
+/*João Pedro Mendes Nowicki - Matricula: 202308232746.*/
+/*Rafael Kahl Konorath - Matricula: 202308232711.*/
+.textoBibli {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.carrossel {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    margin: 16px auto;
+    max-width: 1200px;
+    background-color: #050a1d;
+}
+
+.carrossel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-slide img {
+    width: 100%;
+    display: block;
+}
+
+.carrossel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--carousel-button-bg);
+    border: none;
+    color: white;
+    font-size: 32px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.carrossel-button.prev {
+    left: 10px;
+}
+
+.carrossel-button.next {
+    right: 10px;
+}
+
+.carrossel-button:hover {
+    background-color: var(--carousel-button-bg-hover);
+}
+
+.conteinerBibli {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.textoBibli1 {
+    display: inline-block;
+    text-align: left;
+    justify-content: space-between;
+    font-size: 50px;
+    margin: 100px 0 100px 180px;
+}
+
+.botaoBibli {
+    border: none;
+    background-color: #050a1d;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 30px 35px;
+    font-size: 40px;
+}
+
+@media (max-width: 768px) {
+    .textoBibli {
+        font-size: 32px;
+        margin-top: 100px;
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+
+    .carrossel {
+        padding: 16px;
+        margin: 8px auto;
+        max-width: 100%;
+    }
+
+    .carrossel-button {
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    .conteinerBibli {
+        flex-direction: column;
+    }
+
+    .textoBibli1 {
+        font-size: 32px;
+        margin: 50px 0;
+        text-align: center;
+    }
+
+    .botaoBibli {
+        font-size: 24px;
+        padding: 20px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .textoBibli {
+        font-size: 24px;
+    }
+
+    .textoBibli1 {
+        font-size: 24px;
+        margin: 30px 0;
+    }
+
+    .botaoBibli {
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+
+    .carrossel-button {
+        font-size: 20px;
+        padding: 6px;
+    }
+}

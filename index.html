@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/galatico.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/carrossel.css">
+    <link rel="stylesheet" href="css/precos.css">
+    <link rel="stylesheet" href="css\header.css">
+    <link rel="stylesheet" href="css\promocional.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Andromeda</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Logotipo">
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Pesquisar...">
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#precos">Preços</a></li>
+                <li><a href="#biblioteca">Biblioteca</a></li>
+                <li><a href="#formulario">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="login-button">
+            <button id="login-button">Login / Registro</button>
+            <div id="login-dropdown" class="dropdown-content">
+                <form action="login" method="post">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Registrar / Entrar</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    
+    <section class="promocional">
+        <div class="video-background">
+            <video autoplay muted loop id="bg-video">
+                <source src="images/videoGalaxia.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <div class="content">
+                <img src="images/galatico.png" alt="Imagem Descritiva" class="foreground-image">
+                <img src="images/escrita.png" alt="Imagem Descritiva" class="foreground-image1">
+                <h1 class="foreground-text">A sua Galaxia particular de entretenimento</h1>
+            </div>
+        </div>
+
+        <div class="conteudoPromo">
+            <img src="images/familia.jpg" alt="Descrição da Imagem" class="imagemPromo">
+            <div class="textoPromo">
+                <h1>Aproveite na em qualquer lugar</h1>
+                <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+            </div>
+        </div>
+
+        <div class="conteudoPromo1">
+            <div class="textoPromo1">
+                <h1>Crie perfis para crianças</h1>
+                <p>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</p>
+            </div>
+            <img src="images/criancas.jpg" alt="Descrição da Imagem" class="imagemPromo1">
+        </div>
+
+        <div class="conteudoPromo2">
+            <img src="images/times.png" alt="Descrição da Imagem" class="imagemPromo2">
+            <div class="textoPromo2">
+                <h1>Os melhores torneios e ligas esportivas na sua telinha</h1>
+                <p>Assista aos melhores torneios e ligas esportivas diretamente na sua telinha! Não perca nenhum lance com a nossa transmissão ao vivo exclusiva com os melhores comentaristas.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="biblioteca">
+        <h1 class="textoBibli">VEJA UM SISTEMA SOLAR DE NOSSA GALAXIA DE CONTEUDOS!</h1>
+        <div class="carrossel">
+            <div class="carrossel-container">
+                <section class="carrossel-slide"><img src="images/carrossel/umaVezemHollywood.png" alt="Imagem 1"></section>
+                <section class="carrossel-slide"><img src="images/carrossel/BreakingBad.png" alt="Imagem 2"></section>
+                <section class="carrossel-slide"><img src="images/carrossel/bebeRena.png" alt="Imagem 3"></section>
+                <section class="carrossel-slide"><img src="images/carrossel/peakyBlinders.png" alt="Imagem 4"></section>
+                <section class="carrossel-slide"><img src="images/carrossel/django.png" alt="Imagem 5"></section>
+                <section class="carrossel-slide"><img src="images/carrossel/AssDaLua.png" alt="Imagem 6"></section>
+                <section class="carrossel-slide"><img src="images/carrossel/BCS.png" alt="Imagem 7"></section>
+                <section class="carrossel-slide"><img src="images/carrossel/poderosoChefao.png" alt="Imagem 8"></section>
+                <section class="carrossel-slide"><img src="images/carrossel/narcos.png" alt="Imagem 9"></section>
+                <section class="carrossel-slide"><img src="images/carrossel/tropaDeElite.png" alt="Imagem 10"></section>
+                <section class="carrossel-slide"><img src="images/carrossel/Ultimato.png" alt="Imagem 11"></section>
+                <section class="carrossel-slide"><img src="images/carrossel/homemDeFerro3.png" alt="Imagem 12"></section>
+                <section class="carrossel-slide"><img src="images/carrossel/pulpFiction.png" alt="Imagem 13"></section>
+                <section class="carrossel-slide"><img src="images/carrossel/topGun.png" alt="Imagem 14"></section>
+            </div>
+            <button class="carrossel-button prev">❮</button>
+            <button class="carrossel-button next">❯</button>
+        </div>
+        <div class="conteinerBibli">
+            <p class="textoBibli1">E muito mais! Assine o plano Galatico e<br>
+                aproveite cada minuto neste universo!</p>
+                <button class="botaoBibli">Seja um Galatico por 29,50R$ !</button>
+        </div>
+    </section>
+    
+    <section id="precos">
+        <h1 class="textoPrecos">Planos Disponiveis em nosso Serviço</h1>
+        <div class="grid-container">
+            <div class="grid-item2"></div>
+            <div class="grid-item2">Solar<br>19,99 R$</div>
+            <div class="grid-item2">Galáctico<br>29,50 R$</div>
+            <div class="grid-item1">Crie perfis personalizados na sua conta</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item1">Dispositivos para reprodução simultânea</div>
+            <div class="grid-item">X</div>
+            <div class="grid-item">X</div>
+            <div class="grid-item1">Os melhores torneios e ligas esportivas do mundo ao vivo</div>
+            <div class="grid-item">-</div>
+            <div class="grid-item">X</div>
+            <div class="grid-item1">Baixe seus favoritos para assistir sem precisar de internet</div>
+            <div class="grid-item">X</div>
+            <div class="grid-item">X</div>
+            <div class="grid-item1">Proteja sua família com o controle parental</div>
+            <div class="grid-item">X</div>
+            <div class="grid-item">X</div>
+            <div class="grid-item1">Produções locais, programas, séries e filmes premiados exclusivos do Andromeda</div>
+            <div class="grid-item">-</div>
+            <div class="grid-item">X</div>
+            <div class="grid-item1">Lives exclusivas sobre Oscar</div>
+            <div class="grid-item">-</div>
+            <div class="grid-item">X</div>
+            <div class="grid-item1">Lançamentos do cinema</div>
+            <div class="grid-item">-</div>
+            <div class="grid-item">X</div>
+        </div>
+    </section>
+
+    <section class="formulario">
+        <h1 id="formulario" class="textoForm">Caso tenha qualquer duvida ou reclamação a Andromeda esta a sua disposição!</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="campo1">E-Mail:</label>
+                <input type="text" id="campo1" name="campo1" required>
+            </div>
+            <div class="form-group">
+                <label for="campo2">Assunto:</label>
+                <input type="text" id="campo2" name="campo2" required>
+            </div>
+            <div class="form-group">
+                <label for="campo3">Conteudo:</label>
+                <input type="text" id="campo3" name="campo3" required>
+            </div>
+            <button type="submit" class="submit-button">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="rodape">
+        <img src="images/logo.jpg" class="rodape__logo" alt="Andromeda">
+        <ul class="rodape__lista">
+            <li class="lista__link"><a href="#">Dispositivos compatíveis</a></li>
+            <li class="lista__link"><a href="#">Contrato de assinatura</a></li>
+            <li class="lista__link"><a href="#">Política de privacidade</a></li>
+            <li class="lista__link"><a href="#">Proteção de dados no Brasil</a></li>
+            <li class="lista__link"><a href="#">Ajuda</a></li>
+        </ul>
+    </footer>
+
+    <script src="JS\carrossel.js"></script>
+    <script src="JS\login.js"></script>
+</body>
+</html>
